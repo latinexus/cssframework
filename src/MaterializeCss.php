@@ -15,12 +15,6 @@ use Latinexus\Css\HtmlTag;
 class MaterializeCss extends CssFramework
 {
 
-    public function createButton(string $text, array $attributes = []): HtmlTag
-    {
-        $attributes['class'] = ($attributes['class'] ?? '') . ' btn';
-        return new HtmlTag('button', $attributes, $text);
-    }
-
     public function createForm(string $action, string $method, string $content, array $attributes = []): HtmlTag
     {
         $attributes['action'] = $action;
@@ -35,6 +29,12 @@ class MaterializeCss extends CssFramework
         $attributes['name'] = $name;
         $attributes['value'] = $value;
         return new HtmlTag('input', $attributes);
+    }
+
+    public function createButton(string $text, array $attributes = []): HtmlTag
+    {
+        $attributes['class'] = ($attributes['class'] ?? '') . ' btn';
+        return new HtmlTag('button', $attributes, $text);
     }
 
     public function createCheckbox(string $name, string $label, bool $checked = false, array $attributes = []): HtmlTag
