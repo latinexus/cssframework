@@ -1,19 +1,23 @@
 {
-  "name": "latinexus/lx_htmltag",
+  "name": "latinexus/lx_cssframework",
   "description": "CSS Frameworks wrappers",
   "type": "library",
   "license": "GPL-3.0",
   "homepage": "https://latinex.us",
   "keywords": ["PHP support for CSS Frameworks"],
+  "require": {
+    "php": "^8.2"
+  },
   "autoload": {
     "psr-4": {
-      "Latinexus\\Html\\": "src/"
+      "Latinexus\\Css\\": "src/"
     }
   },
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/latinexus/cssframework"
+      "url": "https://github.com/latinexus/cssframework",
+      "canonical": false
     }
   ],
   "minimum-stability": "stable",
