@@ -1,0 +1,26 @@
+{
+  "name": "latinexus/lx_htmltag",
+  "description": "CSS Frameworks wrappers",
+  "type": "library",
+  "license": "GPL-3.0",
+  "homepage": "https://latinex.us",
+  "keywords": ["PHP support for CSS Frameworks"],
+  "autoload": {
+    "psr-4": {
+      "Latinexus\\Html\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/latinexus/cssframework"
+    }
+  ],
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Eric larrea",
+      "email": "eric@latinex.us"
+    }
+  ]
+}
